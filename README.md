@@ -27,4 +27,5 @@ To run your tests
 
 |method name|link|
 |----|----|
-|array-reverse|[array reverse](./code-challenges/array-reverse/README.md)|
+|array-reverse|[array reverse](./python/code_challenges/array-reverse/README.md)|
+|array-reverse|[array shift](./python/code_challenges/array-insert-shift/README.md)|
