@@ -22,3 +22,9 @@ insert function , which takes any value as an argument and add a node of a value
 includes function , which takes any value as an argument and Return T/F if value is in the linked list or not
 
 str function , which dose not takes an arguments and returns a string representing all the values in the Linked List.
+
+append function : which adds a new node with the given value to the end of the list
+
+insert beforefunction : which add a new node with the given new value immediately before the first value selected
+
+insert after function : which add a new node with the given new value immediately after the first value selected
