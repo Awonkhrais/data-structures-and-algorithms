@@ -29,5 +29,10 @@ insert before function : which add a new node with the given new value immediate
 
 insert after function : which add a new node with the given new value immediately after the first value selected
 
+kthFromEnd a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+
 # whitebord code06
 ![code06](./linked-list-insertion.png)
+
+# whiteborad code07
+![code07](./linklist-k.jpg)
