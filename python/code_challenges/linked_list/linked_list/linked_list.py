@@ -47,20 +47,19 @@ class Linked_list:
         current.next = new_node
 
 
-    def insert_before(self, value, new_value):
-        new_node = Node(new_value)
-        current = self.head
-        if current.value == value:
-            new_node.next = current
-            current = new_node
-
-        while current.next:
-            if current.next.value == value:
-                new_node.next = current.next
-                current.next = new_node
-                break
-            else:
-                current = current.next
+    def insert_before(self,value,new_value):
+        node = Node(new_value)
+        current_node=self.head
+        if current_node.value==value:
+             node.next = self.head
+             self.head = node
+        else:
+            while current_node.next:
+                if current_node.next.value==value:
+                    node.next=current_node.next
+                    current_node.next=node
+                    break
+                current_node=current_node.next
 
     def insert_after(self, value, new_value):
         new_node = Node(new_value)
@@ -92,4 +91,6 @@ if __name__ == "__main__":
     linked_list.append(11)
     linked_list.insert_before(11,8)
     linked_list.insert_after(11,8)
+    linked_list.insert_after(1,8)
+    linked_list.insert_before(1,8)
     print(linked_list)

@@ -30,4 +30,6 @@ To run your tests
 |array-reverse|[array reverse](./python/code_challenges/array-reverse/README.md)|
 |array-shift|[array shift](./python/code_challenges/array-insert-shift/README.md)|
 |array-binary-search|[array-binary-search](./python/code_challenges/array-binary-search/README.md)|
-|linked list 5,6|[linked list 5,6](./python/code_challenges/linked_list/README.md)|
+
+|linked-list 5,6|[linked-list](./python/code_challenges/linked_list/README.md)|
+
