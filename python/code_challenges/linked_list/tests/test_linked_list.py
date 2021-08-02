@@ -64,9 +64,9 @@ def test_insert_before_first():
     linked_list.insert(1)
     linked_list.append(74)
     linked_list.append(66)
-    linked_list.insert_before(4,100)
+    linked_list.insert_before(1,100)
     linked_list.__str__()
-    assert linked_list.__str__() == "{1} -> {100} -> {4} -> {7} -> {74} -> {66} -> Null"
+    assert linked_list.__str__() == "{100} -> {1} -> {4} -> {7} -> {74} -> {66} -> Null"
 
 
 def test_insert_after_middle():

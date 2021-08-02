@@ -28,3 +28,6 @@ append function : which adds a new node with the given value to the end of the l
 insert before function : which add a new node with the given new value immediately before the first value selected
 
 insert after function : which add a new node with the given new value immediately after the first value selected
+
+# whitebord code06
+![code06](./linked-list-insertion.png)
