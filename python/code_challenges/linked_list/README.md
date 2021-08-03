@@ -31,8 +31,14 @@ insert after function : which add a new node with the given new value immediatel
 
 kthFromEnd a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 
+zipLists a function which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list
+
 # whitebord code06
 ![code06](./linked-list-insertion.png)
 
 # whiteborad code07
 ![code07](./linklist-k.jpg)
+
+
+# whiteborad code08
+![code07](./llzip.jpg)
