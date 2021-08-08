@@ -20,7 +20,7 @@ My approch is descriped in my code: [code](./stack_and_queue/stack_and_queue.py)
 
 ## API
 
-#### My stack and queue class has 4 methods:
+#### My stack and queue class has these methods:
 
 - `pop()`: this method removes the item on top of the stack by setting its pointer to self.top.next.
 
