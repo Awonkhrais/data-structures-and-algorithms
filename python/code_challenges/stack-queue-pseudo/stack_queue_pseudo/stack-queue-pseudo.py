@@ -18,13 +18,13 @@ class Pseudo_queue:
 
             self.reverse_stack.push(popped)
 
-        self.reverse_stack.pop()
+        result= self.reverse_stack.pop()
 
         while self.reverse_stack.top:
 
             self.first_stack.push(self.reverse_stack.pop())
 
-        return self.first_stack
+        return result
 
 
 
