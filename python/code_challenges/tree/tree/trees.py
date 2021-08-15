@@ -95,6 +95,30 @@ class BinaryTree :
         except:
             print("somethig went wrong check your function")
 
+##################### Code 16 ########################
+
+    def find_max_value(self):
+
+        if self.root.value != None :
+            self.max = self.root.value
+        else :
+            raise Exception ('The tree is empty')
+
+        def walk(root):
+
+            if self.max < root.value:
+                self.max = root.value
+
+
+            if root.left:
+                walk(root.left)
+
+
+            if root.right:
+                walk(root.right)
+        walk(self.root)
+        return(self.max)
+
 class BinarySearchTree(BinaryTree):
 
     def add (self,value):
@@ -139,21 +163,22 @@ class BinarySearchTree(BinaryTree):
 
 if __name__ == "__main__":
     bt = BinaryTree()
-    # bt.root = Node(18)
-    # bt.root.right = Node(23)
-    # bt.root.left = Node(11)
-    # bt.root.right.left = Node(20)
-    # bt.root.left.left = Node(6)
-    # bt.root.right.right = Node(32)
-    bst = BinarySearchTree()
-    bst.root = Node(18)
-    bst.root.right = Node(23)
-    bst.root.left = Node(11)
-    bst.root.right.left = Node(20)
-    bst.root.left.left = Node(6)
-    bst.root.right.right = Node(32)
-    bst.add(13)
+    bt.root = Node(18)
+    bt.root.right = Node(23)
+    bt.root.left = Node(11)
+    bt.root.right.left = Node(20)
+    bt.root.left.left = Node(6)
+    bt.root.right.right = Node(32)
+    # bst = BinarySearchTree()
+    # bst.root = Node(18)
+    # bst.root.right = Node(23)
+    # bst.root.left = Node(11)
+    # bst.root.right.left = Node(20)
+    # bst.root.left.left = Node(6)
+    # bst.root.right.right = Node(32)
+    # bst.add(13)
     # bst.contains(18)
-    print(bst.pre_order())
+    # print(bst.pre_order())
     # print(bt.in_order())
     # print(bt.post_order())
+    print(bt.find_max_value())

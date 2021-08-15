@@ -66,5 +66,18 @@ def test_post_order():
     assert actual == excepted
 
 
+##################### Code 16 ########################
+
+def test_max_value():
+    tree = BinarySearchTree()
+    tree.add(18)
+    tree.add(23)
+    tree.add(11)
+    tree.add(20)
+    tree.add(6)
+    tree.add(32)
+    assert tree.find_max_value() == 32
+
+
 def test_version():
     assert __version__ == '0.1.0'
