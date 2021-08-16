@@ -43,6 +43,17 @@ class Stack :
         content+="Null"
         return content
 
+    def max(self):
+        max = Stack()
+        max.push(0)
+        current = self.top
+        while current:
+            if current.data > max.top.data:
+                max.push(current.data)
+            current=current.next
+        return max.top.data
+    
+
 ####################### Queue ##########################
 
 class Queue:
@@ -94,25 +105,26 @@ class Queue:
 
 
 if __name__ == "__main__":
-    # stack = Stack()
-    # stack.push(1)
-    # stack.push(2)
-    # stack.push(3)
-    # stack.push(4)
-    # print(stack)
+    stack = Stack()
+    stack.push(1)
+    stack.push(2)
+    stack.push(30)
+    stack.push(4)
+    print(stack)
+    print(stack)
     # stack.pop()
     # print(stack)
     # print(stack.is_empty())
     # print(stack.peek())
 
-    queue = Queue()
-    queue.enqueue(1)
-    queue.enqueue(12)
-    queue.enqueue(13)
-    queue.enqueue(13)
-    print(queue)
-    # print(queue.is_empty())
-    # print(queue.peek())
-    print(queue.dequeue())
-    print(queue)
+    # queue = Queue()
+    # queue.enqueue(1)
+    # queue.enqueue(12)
+    # queue.enqueue(13)
+    # queue.enqueue(13)
+    # print(queue)
+    # # print(queue.is_empty())
+    # # print(queue.peek())
+    # print(queue.dequeue())
+    # print(queue)
 
