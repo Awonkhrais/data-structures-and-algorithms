@@ -315,6 +315,7 @@ if __name__ == "__main__":
     # print(bt.breadth_first())
     # tree = BinarySearchTree()
 
+
     # tree.add(28)
     # tree.add(17)
     # tree.add(34)
@@ -325,6 +326,16 @@ if __name__ == "__main__":
     # tree.add(155)
     # tree.add(16)
     # tree.add(2)
+
+    tree.add(5)
+    tree.add(10)
+    tree.add(15)
+    tree.add(20)
+    tree.add(25)
+    tree.add(30)
+    tree.add(35)
+    tree.add(40)
+    tree.add(45)
 
 
     # print(tree.breadth_first())
