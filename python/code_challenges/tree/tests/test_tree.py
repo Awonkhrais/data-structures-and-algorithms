@@ -78,7 +78,7 @@ def test_max_value():
     tree.add(32)
     assert tree.find_max_value() == 32
 
-##################################################
+######################## code 17 ##########################
 
 def test_breadth_first():
     tree = BinaryTree()
@@ -94,6 +94,32 @@ def test_breadth_first():
     expected = [2, 7, 5, 2, 6, 9, 5, 11, 4]
     actual = tree.breadth_first()
     assert expected == actual
+
+######################### code 18 ############################
+
+def test_fizz_buzz_expected_output():
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(150)
+    tree.root.right = Node(5)
+    tree.root.right.right = Node(9)
+    tree.root.right.right.left = Node(7)
+    fizz_buzz = tree.fizz_buzz_tree()
+    actual = fizz_buzz.breadth_first()
+    expected = ['2', '7', 'Buzz', '2', 'Fizz', 'Fizz', 'Buzz', 'FizzBuzz', '7']
+    assert actual == expected
+
+def test_fizz_buzz_tree_empty():
+    tree = BinaryTree()
+
+    actual = tree.fizz_buzz_tree()
+    expected = "tree is empty"
+
+    assert actual == expected
 
 
 def test_version():

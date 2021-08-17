@@ -185,6 +185,39 @@ class BinaryTree :
 
         return result
 
+#################### Code 18 ######################
+
+
+    def fizz_buzz_tree(self):
+        root = self.root
+        new_tree = BinaryTree()
+
+        if not root :
+            return "tree is empty"
+
+        def check_fizz_buzz(node):
+            if node % 3 == 0 and node % 5 == 0:
+                return ('FizzBuzz')
+            elif node % 3 == 0:
+                return ('Fizz')
+            elif node % 5 == 0:
+                return ('Buzz')
+            elif node % 3 != 0 and node % 5 != 0:
+                return str(node)
+
+
+        def walk(node):
+            new_node = Node(check_fizz_buzz(node.value))
+            if node.left:
+                new_node.left = walk(node.left)
+            if node.right:
+                new_node.right = walk(node.right)
+            return new_node
+
+        new_tree.root = walk(root)
+
+        return (new_tree)
+
 class BinarySearchTree(BinaryTree):
 
     def add (self,value):
@@ -227,14 +260,45 @@ class BinarySearchTree(BinaryTree):
                     node = node.right
 
 
+################### code18 #######################
+
+# def FizzBuzzTree(tree):
+#     new_tree = tree
+#     # if new_tree.root != None:
+
+#     def walk(node):
+#             if node.value%3==0 and node.value%5==0:
+#                 node.value = 'FizzBuzz'
+#             elif node.value%3==0:
+#                 node.value = 'Fizz'
+#             elif node.value%5==0:
+#                 node.value = 'Buzz'
+#             elif node.value%3!=0 and node.value%5!=0:
+#                 node.value = str(node.value)
+
+
+#             if node.left:
+#                 walk(node.left)
+#             if node.right:
+#                 walk(node.right)
+
+#     walk(new_tree.root)
+#     return new_tree
+    # else:
+    #     new_tree.root =Node('Tree is Empty')
+    #     return new_tree
+
 if __name__ == "__main__":
-    # bt = BinaryTree()
-    # bt.root = Node(18)
-    # bt.root.right = Node(23)
-    # bt.root.left = Node(11)
-    # bt.root.right.left = Node(20)
-    # bt.root.left.left = Node(6)
-    # bt.root.right.right = Node(32)
+    bt = BinaryTree()
+    bt.root = Node(18)
+    bt.root.right = Node(23)
+    bt.root.left = Node(11)
+    bt.root.right.left = Node(20)
+    bt.root.left.left = Node(6)
+    bt.root.right.right = Node(150)
+    new_tree = ((bt.fizz_buzz_tree()))
+    print(new_tree.breadth_first())
+    # print(bt.breadth_first())
     # # bst = BinarySearchTree()
     # # bst.root = Node(18)
     # # bst.root.right = Node(23)
@@ -249,7 +313,19 @@ if __name__ == "__main__":
     # # print(bt.post_order())
     # # print(bt.find_max_value())
     # print(bt.breadth_first())
-    tree = BinarySearchTree()
+    # tree = BinarySearchTree()
+
+
+    # tree.add(28)
+    # tree.add(17)
+    # tree.add(34)
+    # tree.add(4)
+    # tree.add(21)
+    # tree.add(33)
+    # tree.add(67)
+    # tree.add(155)
+    # tree.add(16)
+    # tree.add(2)
 
     tree.add(5)
     tree.add(10)
@@ -262,4 +338,4 @@ if __name__ == "__main__":
     tree.add(45)
 
 
-    print(tree.breadth_first())
+    # print(tree.breadth_first())
