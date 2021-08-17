@@ -5,6 +5,11 @@ A tree data structure can be defined recursively as a collection of nodes (start
 - Write instance methods of a Binary Tree pre-order, in-order and post-order which show a list of the tree values in these traversal orders.
 - Write instance methods of a Binary Search Tree add and contains which update and read a Binary Search Tree for a value.
 - write method in BinaryTree class that find the maximum value in a numaric tree
+- fizzbuzz method :
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 
 
@@ -30,3 +35,6 @@ find_max : to find the max value in the tree
 
 ![bft](./BFT.jpg)
 
+## code challange 18
+
+![fizzbuzz](./fizzbuzz.jpg)
