@@ -7,7 +7,11 @@ Hashtables are a data structure that utilize key value pairs. This means every N
 The challenge was with collisions and implementing a linked list to solve them, also with testing internals.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O:
+
+Time: O(n).
+space: O(n).
+
 
 ## API
 
